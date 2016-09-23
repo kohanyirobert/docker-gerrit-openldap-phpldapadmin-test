@@ -18,6 +18,7 @@ dn: cn=admin,ou=people,dc=test
 cn: admin
 gidnumber: 500
 homedirectory: /home/users/admin
+mail: admin@test
 objectclass: inetOrgPerson
 objectclass: posixAccount
 objectclass: top
@@ -30,6 +31,7 @@ dn: cn=user,ou=people,dc=test
 cn: user
 gidnumber: 500
 homedirectory: /home/users/user
+mail: user@test
 objectclass: inetOrgPerson
 objectclass: posixAccount
 objectclass: top
