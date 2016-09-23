@@ -29,5 +29,6 @@ To clone the project locally and install Gerrit's commit message hook
 ```
 git clone ssh://admin@localhost:29418/test.git
 cd test
+mkdir -p .git/hooks
 scp -pP 29418 admin@localhost:hooks/commit-msg .git/hooks/
 ```
