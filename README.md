@@ -41,3 +41,10 @@ When testing locally commit by specifying the author like this
 ```
 git -c 'user.name=user' -c 'user.email=user@test' commit -m ...
 ```
+
+or configure the name and the email address in the local git repository
+
+```
+git config user.name user
+git config user.email user@test
+```
