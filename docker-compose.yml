@@ -19,7 +19,7 @@ services:
     image: openfrontier/gerrit
     ports:
       - "8080:8080"
-      - "29418:28418"
+      - "29418:29418"
     links:
       - openldap
     environment:
