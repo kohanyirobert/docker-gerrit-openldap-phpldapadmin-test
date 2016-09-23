@@ -11,3 +11,23 @@ administrator). There is another user called `user` (password `user`).
 
 There is an `openldap.ldif` files which is fed to the OpenLDAP server at
 startup. Add more users, groups, etc. there.
+
+Then access the `gerrit` CLI like this
+
+```
+ssh -p 29418 admin@localhost gerrit --help
+```
+
+To create a project
+
+```
+ssh -p 29418 admin@localhost gerrit create-project test --empty-commit
+```
+
+To clone the project locally and install Gerrit's commit message hook
+
+```
+git clone ssh://admin@localhost:29418/test.git
+cd test
+scp -pP 29418 admin@localhost:hooks/commit-msg .git/hooks/
+```
