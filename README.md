@@ -39,5 +39,5 @@ scp -pP 29418 user@localhost:hooks/commit-msg .git/hooks/
 When testing locally commit by specifying the author like this
 
 ```
-git commit --author 'user <user@test>' -m ...
+git -c 'user.name=user' -c 'user.email=user@test' commit -m ...
 ```
