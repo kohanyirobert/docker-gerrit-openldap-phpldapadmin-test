@@ -1,0 +1,39 @@
+dn: ou=groups,dc=test
+objectclass: organizationalUnit
+objectclass: top
+ou: groups
+
+dn: cn=gerrit,ou=groups,dc=test
+cn: gerrit
+gidnumber: 500
+objectclass: posixGroup
+objectclass: top
+
+dn: ou=people,dc=test
+objectclass: organizationalUnit
+objectclass: top
+ou: people
+
+dn: cn=admin,ou=people,dc=test
+cn: admin
+gidnumber: 500
+homedirectory: /home/users/admin
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: admin
+uid: admin
+uidnumber: 1000
+userpassword: admin
+
+dn: cn=user,ou=people,dc=test
+cn: user
+gidnumber: 500
+homedirectory: /home/users/user
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: user
+uid: user
+uidnumber: 1001
+userpassword: user
